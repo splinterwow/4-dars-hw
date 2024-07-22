@@ -1,0 +1,88 @@
+/* Navbar.module.css */
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  background: #5361e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 150px;
+}
+
+.logotip {
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.navList {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-left: 130px;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navList li a:hover {
+  color: #ffdd57; /* hover uchun rangni o'zgartirish */
+}
+
+.languageSelector {
+  margin-left: auto;
+  position: relative;
+}
+
+.languageSelector select {
+  appearance: none;
+  background: #5361e4;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 40px 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.languageSelector::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+  font-size: 12px;
+}
+
+.startButton {
+  margin-left: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #5361e4;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.startButton:hover {
+  background: #ffdd57; /* hover uchun fon rangini o'zgartirish */
+  color: #5361e4;
+}
